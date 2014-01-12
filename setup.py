@@ -1,6 +1,6 @@
 import os
 from os.path import join, dirname
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 
 def recursiveFileGenerator(rootDir):
@@ -25,6 +25,7 @@ except IOError:
 
 setup(
     name='django-angularui',
+    zip_safe=False,
     version='0.3',
     url="---",
     description='Angularui packaged in a handy django app to speed up new applications and reduce duplication.',
