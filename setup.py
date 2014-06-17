@@ -6,7 +6,5 @@ setup(
     packages=['django_angularui'],
     include_package_data=True,
     zip_safe=False,
-    platforms='any',
-    setup_requires=('ci_scripts'),
-    install_requires=('ci_scripts'),
+    platforms='any'
 )
